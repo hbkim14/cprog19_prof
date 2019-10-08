@@ -1,5 +1,8 @@
-#include<stdio.h>
-#include<assert.h>
+#include <stdio.h>
+#include <assert.h>
+
+int cnt1 = 0;
+int cnt2 = 0;
 
 unsigned int clear_bit(unsigned int n, unsigned int i)
 {
@@ -13,12 +16,14 @@ unsigned int set_bit(unsigned int n,
 {
 	unsigned int mask = v << i;
 	unsigned int cn = clear_bit(n,i);
+	cnt1++;
 	return cn |= mask;	
 }
 
 unsigned int get_bit(unsigned int n, unsigned int i)
 {
 	unsigned int mask = 1 << i; 
+	cnt2++;
 	return (n & mask)? 1 : 0;
 }
 
@@ -31,7 +36,7 @@ void print_bit(unsigned int n)
 	printf("\n");
 }
 
-
+/*
 int main()
 {
 	unsigned int n = 0, v = 1, i = 0;
@@ -45,3 +50,4 @@ int main()
 	assert(v == get_bit(n, i));
 	print_bit(n);	
 }
+*/

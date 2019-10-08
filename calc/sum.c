@@ -1,3 +1,4 @@
+static int count;
 int get_sum(int a, int b)
 {
 	count++;

@@ -1,3 +1,6 @@
+#include<stdio.h>
+
+extern int count;
 int get_diff(int a, int b)
 {
 	count++;

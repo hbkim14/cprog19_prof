@@ -3,6 +3,9 @@
 
 int count;
 
+extern int get_sum(int a, int b);
+extern int get_diff(int a, int b);
+
 int main(int argc, char* argv[])
 {
 	if (argc < 3) {
@@ -14,5 +17,6 @@ int main(int argc, char* argv[])
 
 	printf("%d + %d = %d\n", a, b, get_sum(a, b));
 	printf("%d - %d = %d\n", a, b, get_diff(a, b));
+	printf("%d\n",count);
 
 }
