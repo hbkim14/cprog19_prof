@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int count;
+int count = 0;
 
 extern int get_sum(int a, int b);
 extern int get_diff(int a, int b);
@@ -17,6 +17,6 @@ int main(int argc, char* argv[])
 
 	printf("%d + %d = %d\n", a, b, get_sum(a, b));
 	printf("%d - %d = %d\n", a, b, get_diff(a, b));
-	printf("%d\n",count);
+	printf("count(main) : %d\n",count);
 
 }
